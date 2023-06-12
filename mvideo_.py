@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import scipy.stats as sts
+import scipy
+from scipy import stats as sts
 import matplotlib.pyplot as plt
 
 # Считываем файл
