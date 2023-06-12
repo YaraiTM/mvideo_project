@@ -2,16 +2,16 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import scipy
-from scipy import stats as sts
+import scipy.stats as sts
 import matplotlib.pyplot as plt
 
 # Считываем файл
-data = pd.read_csv("/Users/kirill/Desktop/python_scripts/PSPPR/mvideo_project/mvideo_file.csv", delimiter="\t")
+data = pd.read_csv("mvideo_file.csv", delimiter="\t")
 st.write('Данные по работникам')
 st.write(data)
 
 # Открываем его
-with open('/Users/kirill/Desktop/python_scripts/PSPPR/mvideo_project/mvideo_file.csv', 'rb') as f:
+with open('mvideo_file.csv', 'rb') as f:
    st.download_button('Download CSV', f, file_name='Workers.csv')
 
 # Проверка на пропущенные значения
