@@ -1,8 +1,8 @@
+import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import scipy.stats as sts
-import streamlit as st
+import matplotlib.pyplot as plt
 
 # Считываем файл
 data = pd.read_csv("/Users/kirill/Desktop/python_scripts/PSPPR/mvideo_project/mvideo_file.csv", delimiter="\t")
